@@ -1,11 +1,11 @@
 import { currentProfile } from "@/lib/current-profile";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
-import { NavigationAction } from "./navigation-action";
+import { NavigationAction } from "./navigation-main-action";
 import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "../ui/scroll-area";
-import { NavigationItem } from "./navigation-item"
-import { ModeToggle } from "../mode-toogle";
+import { ScrollArea } from "../../ui/scroll-area";
+import { NavigationItem } from "./navigation-main-item"
+import { ModeToggle } from "../../mode-toogle";
 import { UserButton } from "@clerk/nextjs";
 
 const NavigationSideBar = async () => {

@@ -21,8 +21,6 @@ export const FileUpload = ({
     const test = async (value: string) => {
         onChange("")
         console.log(value)
-        await deleteImage(value)
-        
     }
     if (value && fileType !== 'pdf') {
         return (

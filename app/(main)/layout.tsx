@@ -1,4 +1,4 @@
-import NavigationSideBar from '@/components/navigation/navigation-sidebar'
+import NavigationSideBar from '@/components/navigations/main/navigation-main-sidebar'
 
 export default function MainLayout({
     children,
