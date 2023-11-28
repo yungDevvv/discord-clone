@@ -13,11 +13,11 @@ const SetupPage = async () => {
                     profileId: profile.id
                 }
             }
-        }
-    });
-
+        }, 
+    }); 
+    
     if(server) {
-        return redirect('/servers/' + server.id);
+        return redirect('/servers/' + server.id );
     }
 
     return <InitialModal />;
