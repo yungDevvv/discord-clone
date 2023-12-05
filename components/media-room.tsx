@@ -23,10 +23,13 @@ export const MediaRoom = ({
     const [token, setToken] = useState("");
 
     useEffect(() => {
-        if (!user?.firstName || !user?.lastName) return;
-
-        const name = `${user.firstName} ${user.lastName}`;
-
+        let name = "";
+        if (!user?.firstName || !user?.lastName) {
+            name = "Anonymous"    
+        } else {
+            name = `${user.firstName} ${user.lastName}`;
+        }
+        
         (async () => {
             try {
                 const res = await fetch(`/api/livekit?room=${chatId}&username=${name}`);
