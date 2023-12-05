@@ -10,6 +10,8 @@ import LeaveServerModal from "../modals/member-actions/leave-server-modal";
 import DeleteServerModal from "../modals/member-actions/delete-server-modal";
 import DeleteChannelModal from "../modals/member-actions/delete-channel-modal";
 import EditChannelModal from "../modals/member-actions/edit-channel-modal";
+import { MessageFileModal } from "../modals/chat/message-file-modal";
+import DeleteMessageModal from "../modals/chat/delete-message-modal";
 
 export const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
@@ -31,6 +33,8 @@ export const ModalProvider = () => {
             <DeleteServerModal />
             <DeleteChannelModal />
             <EditChannelModal />
+            <MessageFileModal />
+            <DeleteMessageModal />
         </>
     )
 }
